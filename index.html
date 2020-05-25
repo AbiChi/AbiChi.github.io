@@ -1,17 +1,65 @@
----
-layout: default
----
-<!-- Posts -->
-<ul id="posts">
+<html style="scroll-behavior:smooth">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/solar/bootstrap.css">
+    <meta name="keywords" content="Nathaniel Budijono,portfolio,LinkedIn,code,skills">
+    <meta name="author" content="Nathaniel Budijono">
+    <meta name="google-site-verification" content="XkvvbvbB2BDVwBrRLkv0RPfIPvOFRXNtDV54W48lQjE" />
+    <meta name="description" content="Hi, thanks for Googling me! I'm Nathaniel Budijono, an undergraduate student at the University of Minnesota studying Computer Science. This is my portfolio site."/>
+    <link rel="icon" type="image/x-icon" href="https://github.githubassets.com/favicon.ico">
+    <title>nathanielbd | Nathaniel Budijono's personal website</title>
+</head>
 
-	{% for post in paginator.posts %}
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">nathanielbd</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="navone" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-	  <li class="post">
-	  	<h2><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{{ post.title }}</a></h2>
-	  	<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time>
-	  	<p>{{ post.content | strip_html | truncatewords:50 }}</p>
-	  </li>
-
-    {% endfor %}
-
-</ul>
+  <div class="collapse navbar-collapse" id="nav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+	<a class="nav-link" href="https://docs.google.com/document/d/1pFLiKnY5tsJ-q6jsKC9GPUqm2VMtXHM0BriYhqbbmmo/edit?usp=sharing">Résumé</a>
+      </li>
+      <li class="nav-item">
+	<a class="nav-link" href="http://nathanielbd.github.io/blog">Blog</a>
+      </li>
+      <li class="nav-item">
+	<a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container" style="padding:30px">
+<div class="jumbotron">
+  <h1 class="display-3">Hello, world!</h1>
+  <p class="lead">Welcome to the personal website of Nathaniel Budijono.</p>
+  <hr class="my-4">
+  <p>You're probably here because you either Googled me, got my résumé, or looked at the repo for this site. Whatever the case may be, I hope you find what you want.</p>
+</div>
+<h1 id="about">About</h1>
+<p class="lead">Info on me and this site</p>
+<p>This site serves as a sort of portfolio. It has links to the GitHub repos of my personal programming projects as well as a few words about them. It also has a blog where I'll sometimes write about different things I find interesting. I'm always learning outside of the classroom using any MOOC, tutorial, textbook, or walkthrough I can get my hands on over the internet. Recruiters can find a copy of my résumé up top.</p>
+<p>I'm currently a 2nd-year undergraduate student at the University of Minnesota where I'm studying computer science, math, and computational biology. I have software engineering internship experience, and I've volunteered my time in a computational biology lab. I am interested in every quantitative discipline, especially those that can be applied to human and public health. However, the field that most engrosses me at the moment is computational structural biology, especially the unsolved problem of protein structure prediction.</p>
+<p>Outside of the spheres of school and career, I love board games, books, TV, and video games. Avalon. Zork. Douglas Adams. Ender's Shadow. NFL. Avatar: The Last Airbender. That's my jam.</p>
+<hr class="my-4">
+<h1 id="contact">Contact</h1>
+<a href="mailto:nathanielbd@gmail.com"><button type="button" class="btn btn-outline-primary">Email</button></a>
+<a href="https://github.com/nathanielbd"><button type="button" class="btn btn-outline-secondary">GitHub</button></a>
+<a href="https://linkedin.com/in/nathanielbd"><button type="button" class="btn btn-outline-info">LinkedIn</button></a>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
