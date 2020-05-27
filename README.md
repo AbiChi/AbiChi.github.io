@@ -1,2 +1,2 @@
-# nathanielbd.github.io
-My personal site. For use as a portfolio and blog.
+# AbiChi.github.io
+Abigail Chiaokhiao's personal website. Used a portfolio with a connected blog.
