@@ -9,6 +9,15 @@
       <meta name="description" content="Hi, thanks for Googling me! I'm Abigail Chiaokhiao, an undergraduate student at the University of Minnesota pursuing a bachelor's in Bioproducts & Biosystems Engineering. This is my portfolio site."/>
       <link rel="icon" type="image/x-icon" href="https://github.githubassets.com/favicon.ico">
       <title>AbiChi | Abigail Chiaokhiao's personal website</title>
+      <style>
+        #title,#subtitle,#jumboText
+        {
+          align-self: left;
+        }
+        #photo{
+          align-self: right;
+        }
+      </style>
   </head>
 
   <body>
@@ -43,10 +52,11 @@
     </nav>
     <div class="container" style="padding:30px">
       <div class="jumbotron">
-        <h1 class="display-3">Welcome!</h1>
-        <p class="lead">Welcome to the personal website of Abigail Chiaokhiao.</p>
+        <h1 class="display-3" id="title">Welcome!</h1>
+        <p class="lead" id="subtitle">Welcome to the personal website of Abigail Chiaokhiao.</p>
         <hr class="my-4">
-          <p>No matter the circumstances of your arrival (Googling, Github exploring, etcetera), I hope you enjoy my site.</p>
+          <p id="jumboText">No matter the circumstances of your arrival (Googling, Github exploring, etcetera), I hope you enjoy my site.</p>
+          <img src="/photos/FancyMe.jpg" width="100%" id="photo">
       </div>
       <h1 id="about">About</h1>
       <p class="lead">Info on me and this site</p>
