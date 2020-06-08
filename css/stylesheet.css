@@ -16,9 +16,57 @@
 /* Variables */
 --body: #839496;
 --bodyBkgd: rgb(255, 242, 213);
---listGroupAction: #ff00dd;
---listGroupActiveBkgd: #EEE8D5;
+
+/* List Group */
+--listGroup: #fff;
 --listGroupHoverBkgd: #073642;
+
+--listGroupPrimary: #5e4700;
+--listGroupPrimaryHoverBkgd: #e4d5a4;
+
+--listGroup2nd: #444d4e;
+--listGroup2ndBkgd: #dce1e2;
+--listGroup2ndHoverBkgd: #ced5d6;
+
+--listGroupActiveText: #ff00dd;
+--listGroupActiveBkgd: #EEE8D5;
+
+--listGroupDanger: #6e1c44;
+--listGroupDangerBkgd: #f3c7dc;
+--listGroupDangerActiveBdr: #6e1c44;
+--listGroupDangerActiveBkgd: #6e1c44;
+--listGroupDangerHover: #6e1c44;
+--listGroupDangerHoverBkgd: #efb2cf;
+
+--listGroupDark: #041c22;
+--listGroupDarkBkgd: #bac7ca;
+--listGroupDarkActiveBdr: #041c22;
+--listGroupDarkActiveBkgd: #041c22;
+--listGroupDarkHover: #041c22;
+--listGroupDarkHoverBkgd: #acbbbf;
+
+--listGroupInfo: #14486d;
+--listGroupInfoBkgd: #c2dff2;
+--listGroupInfoActiveBdr: #14486d;
+--listGroupInfoActiveBkgd: #14486d;
+--listGroupInfoHover: #14486d;
+--listGroupInfoHoverBkgd: #add4ee;
+
+--listGroupLight: #848076;
+--listGroupLightBkgd: #fefcf7;
+--listGroupLightActiveBdr: #848076;
+--listGroupLightActiveBkgd: #848076;
+--listGroupLightHover: #848076;
+--listGroupLightHoverBkgd: #fbf4e0;
+
+--listGroupSuccess: #16544f;
+--listGroupSuccessBkgd: #c3e5e2;
+--listGroupSuccessHoverBkgd: #b1ddd9;
+
+--listGroupWarning: #6a270b;
+--listGroupWarningBkgd: #f0cdbe;
+--listGroupWarningHoverBkgd: #ebbda9;
+
 
 
   /* Colors */
@@ -5950,7 +5998,7 @@
  
  .list-group-item-action {
    width: 100%;
-   color: var(--listGroupAction);
+   color: var(--listGroupActiveText);
    text-align: inherit;
  }
  
@@ -6162,131 +6210,131 @@
  }
  
  .list-group-item-primary {
-   color: #5e4700;
+   color: var(--listGroupPrimary);
    background-color: #eadeb8;
  }
  
  .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
-   color: #5e4700;
-   background-color: #e4d5a4;
+   color: var(--listGroupPrimary);
+   background-color: var(--listGroupPrimaryHoverBkgd);
  }
  
  .list-group-item-primary.list-group-item-action.active {
-   color: #fff;
-   background-color: #5e4700;
-   border-color: #5e4700;
+   color: var(--listGroup);
+   background-color: var(--listGroupPrimary);
+   border-color: var(--listGroupPrimary);
  }
  
  .list-group-item-secondary {
-   color: #444d4e;
-   background-color: #dce1e2;
+   color: var(--listGroup2nd);
+   background-color: var(--listGroup2ndBkgd);
  }
  
  .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
-   color: #444d4e;
-   background-color: #ced5d6;
+   color: var(--listGroup2nd);
+   background-color: var(--listGroup2ndHoverBkgd);
  }
  
  .list-group-item-secondary.list-group-item-action.active {
-   color: #fff;
-   background-color: #444d4e;
-   border-color: #444d4e;
+   color: var(--listGroup);
+   background-color: var(--listGroup2nd);
+   border-color: var(--listGroup2nd);
  }
  
  .list-group-item-success {
-   color: #16544f;
-   background-color: #c3e5e2;
+   color: var(--listGroupSuccess);
+   background-color: var(--listGroupSuccessBkgd);
  }
  
  .list-group-item-success.list-group-item-action:hover, .list-group-item-success.list-group-item-action:focus {
-   color: #16544f;
-   background-color: #b1ddd9;
+   color: var(--listGroupSuccess);
+   background-color: var(--listGroupSuccessHoverBkgd);
  }
  
  .list-group-item-success.list-group-item-action.active {
-   color: #fff;
-   background-color: #16544f;
-   border-color: #16544f;
+   color: var(--listGroup);
+   background-color: var(--listGroupSuccess);
+   border-color: var(--listGroupSuccess);
  }
  
  .list-group-item-info {
-   color: #14486d;
-   background-color: #c2dff2;
+   color: var(--listGroupInfo);
+   background-color: var(--listGroupInfoBkgd);
  }
  
  .list-group-item-info.list-group-item-action:hover, .list-group-item-info.list-group-item-action:focus {
-   color: #14486d;
-   background-color: #add4ee;
+   color: var(--listGroupInfoHover);
+   background-color: var(--listGroupInfoHoverBkgd);
  }
  
  .list-group-item-info.list-group-item-action.active {
-   color: #fff;
-   background-color: #14486d;
-   border-color: #14486d;
+   color: var(--listGroup);
+   background-color: var(--listGroupInfoActiveBkgd);
+   border-color: var(--listGroupInfoActiveBdr);
  }
  
  .list-group-item-warning {
-   color: #6a270b;
-   background-color: #f0cdbe;
+   color: var(--listGroupWarning);
+   background-color: var(--listGroupWarningBkgd);
  }
  
  .list-group-item-warning.list-group-item-action:hover, .list-group-item-warning.list-group-item-action:focus {
-   color: #6a270b;
-   background-color: #ebbda9;
+   color: var(--listGroupWarning);
+   background-color: var(--listGroupWarningHoverBkgd);
  }
  
  .list-group-item-warning.list-group-item-action.active {
-   color: #fff;
-   background-color: #6a270b;
-   border-color: #6a270b;
+   color: var(--listGroup);
+   background-color: var(--listGroupWarning);
+   border-color: var(--listGroupWarning);
  }
  
  .list-group-item-danger {
-   color: #6e1c44;
-   background-color: #f3c7dc;
+   color: var(--listGroupDanger);
+   background-color: var(--listGroupDangerBkgd);
  }
  
  .list-group-item-danger.list-group-item-action:hover, .list-group-item-danger.list-group-item-action:focus {
-   color: #6e1c44;
-   background-color: #efb2cf;
+   color: var(--listGroupDangerHover);
+   background-color: var(--listGroupDangerHoverBkgd);
  }
  
  .list-group-item-danger.list-group-item-action.active {
-   color: #fff;
-   background-color: #6e1c44;
-   border-color: #6e1c44;
+   color: var(--listGroup);
+   background-color: var(--listGroupDangerActiveBkgd);
+   border-color: var(--listGroupDangerActiveBdr);
  }
  
  .list-group-item-light {
-   color: #848076;
-   background-color: #fefcf7;
+   color: var(--listGroupLight);
+   background-color: var(--listGroupLightBkgd);
  }
  
  .list-group-item-light.list-group-item-action:hover, .list-group-item-light.list-group-item-action:focus {
-   color: #848076;
-   background-color: #fbf4e0;
+   color: var(--listGroupLightHover);
+   background-color: var(--listGroupLightHoverBkgd);
  }
  
  .list-group-item-light.list-group-item-action.active {
-   color: #fff;
-   background-color: #848076;
-   border-color: #848076;
+   color: var(--listGroup);
+   background-color: var(--listGroupLightActiveBkgd);
+   border-color: var(--listGroupLightActiveBdr);
  }
  
  .list-group-item-dark {
-   color: #041c22;
-   background-color: #bac7ca;
+   color: var(--listGroupDark);
+   background-color: var(--listGroupDarkBkgd);
  }
  
  .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
-   color: #041c22;
-   background-color: #acbbbf;
+   color: var(--listGroupDarkHover);
+   background-color: var(--listGroupDarkHoverBkg);
  }
  
  .list-group-item-dark.list-group-item-action.active {
-   color: #fff;
-   background-color: #041c22;
-   border-color: #041c22;
+   color: var(--listGroup);
+   background-color: var(--listGroupDarkActiveBkgd);
+   border-color: var(--listGroupDarkActiveBdr);
  }
  
  .close {
