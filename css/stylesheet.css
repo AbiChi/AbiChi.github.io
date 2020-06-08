@@ -16,6 +16,9 @@
 /* Variables */
 --body: #839496;
 --bodyBkgd: rgb(255, 242, 213);
+--listGroupAction: #ff00dd;
+--listGroupActiveBkgd: #EEE8D5;
+--listGroupHoverBkgd: #073642;
 
 
   /* Colors */
@@ -5947,7 +5950,7 @@
  
  .list-group-item-action {
    width: 100%;
-   color: #839496;
+   color: var(--listGroupAction);
    text-align: inherit;
  }
  
@@ -5955,12 +5958,12 @@
    z-index: 1;
    color: rgba(255, 255, 255, 0.75);
    text-decoration: none;
-   background-color: #073642;
+   background-color: var(--listGroupHoverBkgd);
  }
  
  .list-group-item-action:active {
    color: #839496;
-   background-color: #EEE8D5;
+   background-color: var(--listGroupActiveBkgd);
  }
  
  .list-group-item {
