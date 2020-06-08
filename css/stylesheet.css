@@ -15,48 +15,37 @@
  :root {
 /* Variables */
 --body: #839496;
---bodyBkgd: rgb(255, 242, 213);
+--bodyBkgd: #ffffe5;
 
 /* List Group */
 --listGroup: #fff;
---listGroupHoverBkgd: #073642;
+--listGroupHoverBkgd: #7e31b4;
 
 --listGroupPrimary: #5e4700;
+--ListGroupPrimaryBkgd: #4b0082;
 --listGroupPrimaryHoverBkgd: #e4d5a4;
 
 --listGroup2nd: #444d4e;
 --listGroup2ndBkgd: #dce1e2;
 --listGroup2ndHoverBkgd: #ced5d6;
 
---listGroupActiveText: #ff00dd;
---listGroupActiveBkgd: #EEE8D5;
+--listGroupActiveText: #fff;
+--listGroupActiveBkgd: rgb(213, 213, 238);/*Not sure what this is*/
 
 --listGroupDanger: #6e1c44;
 --listGroupDangerBkgd: #f3c7dc;
---listGroupDangerActiveBdr: #6e1c44;
---listGroupDangerActiveBkgd: #6e1c44;
---listGroupDangerHover: #6e1c44;
 --listGroupDangerHoverBkgd: #efb2cf;
 
 --listGroupDark: #041c22;
 --listGroupDarkBkgd: #bac7ca;
---listGroupDarkActiveBdr: #041c22;
---listGroupDarkActiveBkgd: #041c22;
---listGroupDarkHover: #041c22;
 --listGroupDarkHoverBkgd: #acbbbf;
 
 --listGroupInfo: #14486d;
 --listGroupInfoBkgd: #c2dff2;
---listGroupInfoActiveBdr: #14486d;
---listGroupInfoActiveBkgd: #14486d;
---listGroupInfoHover: #14486d;
 --listGroupInfoHoverBkgd: #add4ee;
 
 --listGroupLight: #848076;
 --listGroupLightBkgd: #fefcf7;
---listGroupLightActiveBdr: #848076;
---listGroupLightActiveBkgd: #848076;
---listGroupLightHover: #848076;
 --listGroupLightHoverBkgd: #fbf4e0;
 
 --listGroupSuccess: #16544f;
@@ -67,38 +56,7 @@
 --listGroupWarningBkgd: #f0cdbe;
 --listGroupWarningHoverBkgd: #ebbda9;
 
-
-
-  /* Colors */
-   --black: #000000;
-   --indigo: #6610f2;
-   --purple: #6f42c1;
-   --pink: #e83e8c;
-   --red: #D33682;
-   --orange: #fd7e14;
-   --yellow: #CB4B16;
-   --green: #2AA198;
-   --teal: #20c997;
-   --cyan: #268BD2;
-   --white: #fff;
-   --gray: #839496;
-   --gray-dark: #073642;
-   --primary: #B58900;
-   --secondary: #839496;
-   --success: #2AA198;
-   --info: #268BD2;
-   --warning: #CB4B16;
-   --danger: #D33682;
-   --light: #FDF6E3;
-   --dark: #073642;
-   --breakpoint-xs: 0;
-   --breakpoint-sm: 576px;
-   --breakpoint-md: 768px;
-   --breakpoint-lg: 992px;
-   --breakpoint-xl: 1200px;
-   --font-family-sans-serif: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
- }
+}
  
  *,
  *::before,
@@ -111,7 +69,7 @@
    font-family: sans-serif;
    line-height: 1.15;
    -webkit-text-size-adjust: 100%;
-   -webkit-tap-highlight-color: var(--black);
+   -webkit-tap-highlight-color: black;
  }
  
  article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -6211,7 +6169,7 @@
  
  .list-group-item-primary {
    color: var(--listGroupPrimary);
-   background-color: #eadeb8;
+   background-color: var(--ListGroupPrimaryBkgd);
  }
  
  .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
@@ -6263,14 +6221,14 @@
  }
  
  .list-group-item-info.list-group-item-action:hover, .list-group-item-info.list-group-item-action:focus {
-   color: var(--listGroupInfoHover);
+   color: var(--listGroupInfo);
    background-color: var(--listGroupInfoHoverBkgd);
  }
  
  .list-group-item-info.list-group-item-action.active {
    color: var(--listGroup);
-   background-color: var(--listGroupInfoActiveBkgd);
-   border-color: var(--listGroupInfoActiveBdr);
+   background-color: var(--listGroupInfo);
+   border-color: var(--listGroupInfo);
  }
  
  .list-group-item-warning {
@@ -6295,14 +6253,14 @@
  }
  
  .list-group-item-danger.list-group-item-action:hover, .list-group-item-danger.list-group-item-action:focus {
-   color: var(--listGroupDangerHover);
+   color: var(--listGroupDanger);
    background-color: var(--listGroupDangerHoverBkgd);
  }
  
  .list-group-item-danger.list-group-item-action.active {
    color: var(--listGroup);
-   background-color: var(--listGroupDangerActiveBkgd);
-   border-color: var(--listGroupDangerActiveBdr);
+   background-color: var(--listGroupDanger);
+   border-color: var(--listGroupDanger);
  }
  
  .list-group-item-light {
@@ -6311,14 +6269,14 @@
  }
  
  .list-group-item-light.list-group-item-action:hover, .list-group-item-light.list-group-item-action:focus {
-   color: var(--listGroupLightHover);
+   color: var(--listGroupLight);
    background-color: var(--listGroupLightHoverBkgd);
  }
  
  .list-group-item-light.list-group-item-action.active {
    color: var(--listGroup);
-   background-color: var(--listGroupLightActiveBkgd);
-   border-color: var(--listGroupLightActiveBdr);
+   background-color: var(--listGroupLight);
+   border-color: var(--listGroupLight);
  }
  
  .list-group-item-dark {
@@ -6327,14 +6285,14 @@
  }
  
  .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
-   color: var(--listGroupDarkHover);
+   color: var(--listGroupDark);
    background-color: var(--listGroupDarkHoverBkg);
  }
  
  .list-group-item-dark.list-group-item-action.active {
    color: var(--listGroup);
-   background-color: var(--listGroupDarkActiveBkgd);
-   border-color: var(--listGroupDarkActiveBdr);
+   background-color: var(--listGroupDark);
+   border-color: var(--listGroupDark);
  }
  
  .close {
