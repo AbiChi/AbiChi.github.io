@@ -15,23 +15,24 @@
  :root {
 /* Variables */
 --body: #839496;
---bodyBkgd: #003cff;
+--bodyBkgd: #ffffe5;
 
 /* List Group */
 --listGroup: #fff;
 --listGroupHoverBkgd: #7e31b4;
 
---listGroupPrimary: #5e4700;
---listGroupPrimaryBkgd: #4b0082;
---listGroupPrimaryHoverBkgd: #e4d5a4;
+--listGroupPrimary: #5e4700;/*Not sure*/
+--listGroupPrimaryBkgd: #4b0082;/*what this*/
+--listGroupPrimaryHoverBkgd: #e4d5a4;/*is*/
 
---listGroup2nd: #444d4e;
---listGroup2ndBkgd: #dce1e2;
---listGroup2ndHoverBkgd: #ced5d6;
+--listGroup2nd: #444d4e;/*Not sure*/
+--listGroup2ndBkgd: #dce1e2;/*what this*/
+--listGroup2ndHoverBkgd: #ced5d6;/*is*/
 
 --listGroupActiveText: #fff;
---listGroupActiveBkgd: rgb(213, 213, 238);/*Not sure what this is*/
+--listGroupActiveBkgd: #9052bd;/*Not sure what this is*/
 
+/*Not sure what these are*/
 --listGroupDanger: #6e1c44;
 --listGroupDangerBkgd: #f3c7dc;
 --listGroupDangerHoverBkgd: #efb2cf;
