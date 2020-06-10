@@ -13,9 +13,13 @@
  */
  @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
  :root {
+   /*The color: B58900*/
 /* Variables */
 --bodyText: #000000;
 --bodyBkgd: #ffffe5;
+
+
+--btnPrimary: #B58900;
 
 
 --jumbotronBkgd: #ebe2c9;
@@ -2809,9 +2813,9 @@
  
  .btn-primary {
    color: #fff;
-   background: #B58900 -webkit-gradient(linear, left top, left bottom, from(#9a7b08), to(#B58900)) repeat-x;
-   background: #B58900 linear-gradient(180deg, #9a7b08, #B58900) repeat-x;
-   border-color: #B58900;
+   background: var(--btnPrimary) -webkit-gradient(linear, left top, left bottom, from(#9a7b08), to(var(--btnPrimary))) repeat-x;
+   background: var(--btnPrimary) linear-gradient(180deg, #9a7b08, var(--btnPrimary)) repeat-x;
+   border-color: var(--btnPrimary);
  }
  
  .btn-primary:hover {
@@ -2832,8 +2836,8 @@
  
  .btn-primary.disabled, .btn-primary:disabled {
    color: #fff;
-   background-color: #B58900;
-   border-color: #B58900;
+   background-color: var(--btnPrimary);
+   border-color: var(--btnPrimary);
    background-image: none;
  }
  
@@ -3160,14 +3164,14 @@
  }
  
  .btn-outline-primary {
-   color: #B58900;
-   border-color: #B58900;
+   color: var(--btnPrimary);
+   border-color: var(--btnPrimary);
  }
  
  .btn-outline-primary:hover {
    color: #fff;
-   background-color: #B58900;
-   border-color: #B58900;
+   background-color: var(--btnPrimary);
+   border-color: var(--btnPrimary);
  }
  
  .btn-outline-primary:focus, .btn-outline-primary.focus {
@@ -3176,15 +3180,15 @@
  }
  
  .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-   color: #B58900;
+   color: var(--btnPrimary);
    background-color: transparent;
  }
  
  .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
  .show > .btn-outline-primary.dropdown-toggle {
    color: #fff;
-   background-color: #B58900;
-   border-color: #B58900;
+   background-color: var(--btnPrimary);
+   border-color: var(--btnPrimary);
  }
  
  .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
