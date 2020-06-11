@@ -27,14 +27,15 @@
 --btn3Shdw: rgba(231, 18, 18, 0.5);
 --btn4: #406eeb;
 --btn4Shdw: rgba(40, 138, 184, 0.5);
+--btnText: #000000;
 
 
---jumbotronBkgd: #ebe2c9;
+--jumbotronBkgd: #b476e0;
 
 
 /* List Group */
 --listGroup: #fff;
---listGroupHoverBkgd: #b4319e;
+--listGroupHoverBkgd: #9052bd;
 
 --listGroupPrimary: #5e4700;/*Not sure*/
 --listGroupPrimaryBkgd: #4b0082;/*what this*/
@@ -2770,7 +2771,7 @@
  .btn {
    display: inline-block;
    font-weight: 400;
-   color: #839496;
+   color: var(--btnText);
    text-align: center;
    vertical-align: middle;
    -webkit-user-select: none;
